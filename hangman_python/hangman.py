@@ -2,11 +2,6 @@ import random
 from words import word_list
 
 
-def get_word():
-    word = random.choice(word_list)
-    return word.upper()
-
-
 def play(word):
     word_completion = " _ " * len(word)
     guessed = False 
@@ -130,15 +125,3 @@ def display_hangman(tries):
                 """
     ]
     return stages[tries]
-
-
-def main():
-    word = get_word()
-    play(word)
-    while input("Chcesz zagrac ponownie? (T/N) ").upper() == "Y":
-        word = get_word()
-        play(word)
-
-
-if __name__ == "__main__":
-    main()
