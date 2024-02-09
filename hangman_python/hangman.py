@@ -125,3 +125,4 @@ def display_hangman(tries):
                 """
     ]
     return stages[tries]
+    #Udaje ze ten komentarz cokolwiek zmienia bo musze cos dodac do zadania zeby miec co wpisac w sprawozdaniu
